@@ -1,7 +1,6 @@
 package de.albritter.utils;
 
 import lombok.Getter;
-import lombok.NonNull;
 import lombok.Setter;
 
 public class Profile {

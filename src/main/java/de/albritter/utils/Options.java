@@ -1,10 +1,8 @@
 package de.albritter.utils;
 
-import lombok.Getter;
 import lombok.NonNull;
 
 import java.sql.*;
-import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Options {

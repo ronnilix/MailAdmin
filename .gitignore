@@ -1,9 +1,5 @@
-#idea
-/.idea
-*.iml
-.idea/
-#gradle
-/build
-/.gradle
-/lib/
-/src/test/
+build/
+lib/
+src/test/
+target/
+bin/

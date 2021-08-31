@@ -59,7 +59,6 @@ public final class MySQLHandler {
     private static String user;
     @Setter
     private static String db;
-    private static PreparedStatement preparedStatement;
     private static Connection conn;
     @Getter
     private static String[] currentDomainSet;
@@ -95,7 +94,7 @@ public final class MySQLHandler {
     public static boolean openConnection() {
         try {
             System.out.println(server);
-            conn = DriverManager.getConnection("jdbc:mysql://" + server + "/" + db + "?requireSSL=true&serverTimezone=Europe/Berlin", user, password);
+            conn = DriverManager.getConnection("jdbc:mysql://" + server + "/" + db + "?requireSSL=false&serverTimezone=Europe/Berlin", user, password);
 
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, e.getStackTrace(), e.getMessage(), JOptionPane.ERROR_MESSAGE);

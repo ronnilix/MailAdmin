@@ -236,8 +236,8 @@ public class PanelMailbox extends JPanel implements TableSelectionEvent
 		GridBagConstraints gbc_chckbxUpdatePassword = new GridBagConstraints();
 		gbc_chckbxUpdatePassword.anchor = GridBagConstraints.WEST;
 		gbc_chckbxUpdatePassword.insets = new Insets(0, 0, 5, 0);
-		gbc_chckbxUpdatePassword.gridx = 1;
-		gbc_chckbxUpdatePassword.gridy = 8;
+		gbc_chckbxUpdatePassword.gridx = 3;
+		gbc_chckbxUpdatePassword.gridy = 6;
 		add(chckbxUpdatePassword, gbc_chckbxUpdatePassword);
 
 		chckbxActive = new JCheckBox("Active");

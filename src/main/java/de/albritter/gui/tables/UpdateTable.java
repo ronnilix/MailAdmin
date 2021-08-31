@@ -23,7 +23,7 @@ import java.util.EventListener;
 /**
  * Created by hhalbritter on 13.06.2016.
  */
-public interface UpdateTabel extends EventListener {
+public interface UpdateTable extends EventListener {
     void updateDomainTable(Object[][] data);
 
     void updateMailboxTable(Object[][] data);

@@ -32,7 +32,11 @@ import java.awt.GridBagLayout;
 import java.awt.Insets;
 
 public class PanelDomain extends JPanel implements TableSelectionEvent {
-    @Getter
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	@Getter
     private JTextField textDomain;
     @Getter
     private JSpinner spinnerID;

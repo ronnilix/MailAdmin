@@ -35,7 +35,11 @@ import java.awt.GridBagLayout;
 import java.awt.Insets;
 
 public class PanelTLS extends JPanel implements TableSelectionEvent {
-    @Getter
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	@Getter
     private JTextField textArgument;
     @Getter
     private JTextField textDomain;

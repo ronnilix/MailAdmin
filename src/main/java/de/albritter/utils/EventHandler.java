@@ -35,7 +35,7 @@
 package de.albritter.utils;
 
 import de.albritter.gui.tables.DataTable;
-import de.albritter.gui.tables.UpdateTabel;
+import de.albritter.gui.tables.UpdateTable;
 
 import java.util.ArrayList;
 
@@ -44,14 +44,14 @@ import java.util.ArrayList;
  */
 public final class EventHandler {
     //   private static ArrayList<UseRadioSelection> useRadioSelection = new ArrayList<UseRadioSelection>();
-    private static ArrayList<UpdateTabel> updateTabel = new ArrayList<UpdateTabel>();
+    private static ArrayList<UpdateTable> updateTabel = new ArrayList<UpdateTable>();
     private static ArrayList<TableSelectionEvent> tableSelectionEvent = new ArrayList<TableSelectionEvent>();
 
    /* public static <T extends UseRadioSelection> void registerForRadioEvent(T obj) {
         useRadioSelection.add(obj);
     }*/
 
-    public static <T extends UpdateTabel> void registerForUpdateTableEvent(T obj) {
+    public static <T extends UpdateTable> void registerForUpdateTableEvent(T obj) {
         updateTabel.add(obj);
     }
 
@@ -78,25 +78,25 @@ public final class EventHandler {
     }*/
 
     public static void updateMailboxTable(Object[][] data) {
-        for (UpdateTabel anUpdateTabel : updateTabel) {
+        for (UpdateTable anUpdateTabel : updateTabel) {
             anUpdateTabel.updateMailboxTable(data);
         }
     }
 
     public static void updateAliasTable(Object[][] data) {
-        for (UpdateTabel anUpdateTabel : updateTabel) {
+        for (UpdateTable anUpdateTabel : updateTabel) {
             anUpdateTabel.updateAliasTable(data);
         }
     }
 
     public static void updateDomainTable(Object[][] data) {
-        for (UpdateTabel anUpdateTabel : updateTabel) {
+        for (UpdateTable anUpdateTabel : updateTabel) {
             anUpdateTabel.updateDomainTable(data);
         }
     }
 
     public static void updateTLSTable(Object[][] data) {
-        for (UpdateTabel anUpdateTabel : updateTabel) {
+        for (UpdateTable anUpdateTabel : updateTabel) {
             anUpdateTabel.updateTLSTable(data);
         }
     }

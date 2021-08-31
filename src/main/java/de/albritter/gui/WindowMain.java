@@ -39,7 +39,11 @@ import java.awt.GridBagLayout;
 import java.awt.Insets;
 
 public class WindowMain extends JFrame {
-    @Getter
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	@Getter
     private final PanelMailbox panelMailbox;
     @Getter
     private final PanelTLS panelTLS;

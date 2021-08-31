@@ -27,8 +27,12 @@ import java.awt.BorderLayout;
 /**
  * Created by hhalbritter on 13.06.2016.
  */
-public class MailboxTable extends JPanel implements UpdateTabel {
-    public final static String[] HEADER = new String[]{"ID", "Username", "Domain", "Password", "Quota", "Active", "Sendonly"};
+public class MailboxTable extends JPanel implements UpdateTable {
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	public final static String[] HEADER = new String[]{"ID", "Username", "Domain", "Password", "Quota", "Active", "Sendonly"};
     DataTable table;
 
     public MailboxTable() {

@@ -35,7 +35,11 @@ import java.awt.GridBagLayout;
 import java.awt.Insets;
 
 public class PanelAliases extends JPanel implements TableSelectionEvent {
-    @Getter
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	@Getter
     private final JTextField textSourceUsername;
     @Getter
     private final JTextField textDestination;

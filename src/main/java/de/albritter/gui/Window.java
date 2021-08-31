@@ -35,7 +35,11 @@ import java.util.HashMap;
 import java.util.Set;
 
 public class Window extends JFrame {
-    private JComboBox<String> comboServer;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private JComboBox<String> comboServer;
     private JTextField txtDatabase;
     private JTextField txtUsername;
     private JPasswordField txtPassword;

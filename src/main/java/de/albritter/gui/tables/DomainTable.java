@@ -27,8 +27,12 @@ import javax.swing.JScrollPane;
 /**
  * Created by hhalbritter on 10.06.2016.
  */
-public class DomainTable extends JPanel implements UpdateTabel {
-    public final static String[] HEADER = new String[]{"ID", "Domain"};
+public class DomainTable extends JPanel implements UpdateTable {
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	public final static String[] HEADER = new String[]{"ID", "Domain"};
     private DataTable table;
 
     public DomainTable() {

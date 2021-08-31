@@ -28,8 +28,12 @@ import java.awt.BorderLayout;
 /**
  * Created by hhalbritter on 14.06.2016.
  */
-public class TLSTable extends JPanel implements UpdateTabel {
-    public static final String[] HEADER = new String[]{"ID", "Domain", "Policy", "Parameter"};
+public class TLSTable extends JPanel implements UpdateTable {
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	public static final String[] HEADER = new String[]{"ID", "Domain", "Policy", "Parameter"};
     private DataTable table;
 
     public TLSTable() {

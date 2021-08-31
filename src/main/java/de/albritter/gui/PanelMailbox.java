@@ -38,7 +38,11 @@ import java.awt.GridBagLayout;
 import java.awt.Insets;
 
 public class PanelMailbox extends JPanel implements TableSelectionEvent {
-    @Getter
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	@Getter
     private JTextField textMail;
     @Getter
     private JPasswordField passwordField;

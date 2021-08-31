@@ -26,8 +26,12 @@ import javax.swing.JScrollPane;
 /**
  * Created by hhalbritter on 14.06.2016.
  */
-public class AliasTable extends JPanel implements UpdateTabel {
-    public final static String[] HEADER = new String[]{"ID", "Incoming User", "Incoming Domain", "Destination User", "Destination Domain", "Active"};
+public class AliasTable extends JPanel implements UpdateTable {
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	public final static String[] HEADER = new String[]{"ID", "Incoming User", "Incoming Domain", "Destination User", "Destination Domain", "Active"};
     private DataTable table;
 
     public AliasTable() {

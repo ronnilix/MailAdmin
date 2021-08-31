@@ -42,7 +42,7 @@ public class LoginActionListener implements ActionListener {
             if (src.openMySQLConection()) {
                 WindowMain w = new WindowMain();
                 w.setVisible(true);
-                w.setSize(600, 400);
+                w.setSize(800, 550);
                 src.saveNewProfile();
                 src.dispose();
             } else {

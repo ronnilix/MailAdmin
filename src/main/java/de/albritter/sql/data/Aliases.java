@@ -34,8 +34,10 @@ public class Aliases extends ADataObject {
     private String destinationUsername;
     @Setter
     private String destinationDomain;
+    @Setter
+    private String note;
 
     public String[] getDataAsArray() {
-        return new String[]{sourceUsername, sourceDomain, destinationUsername, destinationDomain, String.valueOf(active)};
+        return new String[]{sourceUsername, sourceDomain, destinationUsername, destinationDomain, String.valueOf(active), note};
     }
 }

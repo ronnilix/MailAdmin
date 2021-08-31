@@ -33,6 +33,8 @@ public class Mailbox extends ADataObject {
     @Setter
     private String password;
     @Setter
+    private String note;
+    @Setter
     private int quota;
     @Setter
     private int sendonly;
@@ -44,8 +46,8 @@ public class Mailbox extends ADataObject {
         System.out.println("{SHA512-CRYPT}" + password);
         //return new String[]{username, domain, "{SHA512-CRYPT}" + Sha512Crypt.Sha512_crypt(password, "$6$"+CryptoUtils.getNewSalt()+"$", 5000), String.valueOf(quota), String.valueOf(enabled), String.valueOf(sendonly)};
         if (changePassword)
-            return new String[]{username, domain, "{SHA512-CRYPT}" + password, String.valueOf(quota), String.valueOf(active), String.valueOf(sendonly)};
+            return new String[]{username, domain, "{SHA512-CRYPT}" + password, String.valueOf(quota), String.valueOf(active), String.valueOf(sendonly), note};
 
-        return new String[]{username, domain, String.valueOf(quota), String.valueOf(active), String.valueOf(sendonly)};
+        return new String[]{username, domain, String.valueOf(quota), String.valueOf(active), String.valueOf(sendonly), note};
     }
 }

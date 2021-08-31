@@ -31,14 +31,14 @@ public class AliasTable extends JPanel implements UpdateTable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	public final static String[] HEADER = new String[]{"ID", "Incoming User", "Incoming Domain", "Destination User", "Destination Domain", "Active"};
+	public final static String[] HEADER = new String[]{"ID", "Incoming User", "Incoming Domain", "Destination User", "Destination Domain", "Active", "Note"};
     private DataTable table;
 
     public AliasTable() {
         EventHandler.registerForUpdateTableEvent(this);
         setLayout(new BorderLayout());
         table = new DataTable(HEADER);
-        table.updateTable(new Object[][]{{422224, "usadsdsadrIn", "doasdsadmainIn", "usasdsaderOut", "asdasd", false}});
+        table.updateTable(new Object[][]{{422224, "usadsdsadrIn", "doasdsadmainIn", "usasdsaderOut", "asdasd", false, "asdnoteasd"}});
 
         add(new JScrollPane(table));
     }

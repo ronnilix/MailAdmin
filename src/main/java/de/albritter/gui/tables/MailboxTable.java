@@ -32,7 +32,7 @@ public class MailboxTable extends JPanel implements UpdateTable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	public final static String[] HEADER = new String[]{"ID", "Username", "Domain", "Password", "Quota", "Active", "Sendonly"};
+	public final static String[] HEADER = new String[]{"ID", "Username", "Domain", "Password", "Quota", "Active", "Sendonly", "Note"};
     DataTable table;
 
     public MailboxTable() {
@@ -40,7 +40,7 @@ public class MailboxTable extends JPanel implements UpdateTable {
         EventHandler.registerForUpdateTableEvent(this);
         setLayout(new BorderLayout());
         table = new DataTable(HEADER);
-        table.updateTable(new Object[][]{{13, "user", "domain", "pass", 5, true, true}});
+        table.updateTable(new Object[][]{{13, "user", "domain", "pass", 5, true, true, "note"}});
         add(new JScrollPane(table));
     }
 

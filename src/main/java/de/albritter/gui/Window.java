@@ -48,8 +48,9 @@ public class Window extends JFrame {
     public Window() {
         super("Login");
         setDefaultCloseOperation(3);
-        setSize(new Dimension(320, 210));
-        setMinimumSize(new Dimension(300, 200));
+        setSize(new Dimension(355, 210));
+        setMinimumSize(new Dimension(350, 200));
+        setLocationRelativeTo(null);
         GridBagLayout gridBagLayout = new GridBagLayout();
         gridBagLayout.columnWidths = new int[]{0, 0, 0, 0, 0, 0, 0};
         gridBagLayout.rowHeights = new int[]{0, 0, 0, 0, 0, 0, 0, 0};
